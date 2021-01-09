@@ -148,7 +148,7 @@ def run_test():
   saver.restore(sess, model_name)
   # And then after everything is built, start the training loop.
   bufsize = 1
-  write_file = open("predict_ret.txt", "w+", bufsize)
+  write_file = open("predict_ret_hra.txt", "w+", bufsize)
   next_start_pos = 0
   all_steps = int((num_test_videos - 1) / (FLAGS.batch_size * gpu_num) + 1)
   for step in xrange(all_steps):
